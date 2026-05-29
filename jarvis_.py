@@ -1,7 +1,7 @@
-import pyttsx3 #pip install pyttsx3
-import speech_recognition as sr #pip install speechRecognition
+import pyttsx3 
+import speech_recognition as sr 
 import datetime
-import wikipedia #pip install wikipedia
+import wikipedia
 import webbrowser
 import os
 import smtplib
@@ -31,7 +31,7 @@ def wishMe():
     speak("I am Jarvis Sir. Please tell me how may I help you")       
 
 def takeCommand():
-    #It takes microphone input from the user and returns string output
+
 
     r = sr.Recognizer()
     with sr.Microphone() as source:
@@ -106,4 +106,4 @@ if __name__ == "__main__":
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("Sorry my friend harry bhai. I am not able to send this email")    
+                speak("Sorry. I am not able to send this email")    
